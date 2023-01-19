@@ -33,22 +33,23 @@ class Program
 	{
 		ArrayList posicao = new ArrayList();
 
-		//foreach (var item in al)
-		//{
-		//	if (item.Equals(elemento))
-		//	{
-		//		posicao.Add(i);
-		//	}
-		//	i++;
-		//}
-
-		for (int i = 0; i < al.Count; i++)
+		int i = 0;
+		foreach (var item in al)
 		{
-			if (al[i].Equals(elemento))
+			if (item.Equals(elemento))
 			{
 				posicao.Add(i);
 			}
+			i++;
 		}
+
+		//for (int i = 0; i < al.Count; i++)
+		//{
+		//	if (al[i].Equals(elemento))
+		//	{
+		//		posicao.Add(i);
+		//	}
+		//}
 		return posicao;
 	}
 
