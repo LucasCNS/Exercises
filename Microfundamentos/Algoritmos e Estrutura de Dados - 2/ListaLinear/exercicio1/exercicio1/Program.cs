@@ -1,4 +1,6 @@
 ﻿// 1 - Em nossa lista linear, implemente um método que retorna a soma dos elementos contidos na mesma.
+// 2 - Em nossa lista linear, implemente um método que retorna o maior elemento contido na mesma.
+// 3 - Em nossa lista linear, implemente um método que inverte a ordem dos seus elementos.
 
 using System.Collections;
 
@@ -203,8 +205,29 @@ class Lista
 		{
 			soma += array[i];
 		}
+		if (soma == 0)
+		{
+			Console.WriteLine("\n======Lista vazia======\n");
+		}
 		Console.WriteLine("Soma dos valores da lista: " + soma);
 		return soma;
+	}
+
+	//Exercicio 2
+	public int MaiorElemento()
+	{
+		Console.WriteLine("\nExercício 2");
+		int maior = 0;
+		for (int i = 0; i < array.Length; i++)
+		{
+			
+			if (array[i] > maior)
+			{
+				maior = array[i];
+			}
+		}
+		Console.WriteLine("O maior elemento da lista é: " + maior);
+		return maior;
 	}
 }
 
@@ -228,5 +251,8 @@ class Program
 
 		//Exercicio 1
 		lista.Soma();
+
+		//Exercicio 2
+		lista.MaiorElemento();
 	}
 }
