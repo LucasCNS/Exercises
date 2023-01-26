@@ -194,13 +194,16 @@ class Lista
 		return retorno;
 	}
 
+	//Exercicio 1
 	public int Soma()
 	{
+		Console.WriteLine("\nExercício 1");
 		int soma = 0;
 		for (int i = 0; i < array.Length; i++)
 		{
 			soma += array[i];
 		}
+		Console.WriteLine("Soma dos valores da lista: " + soma);
 		return soma;
 	}
 }
@@ -223,6 +226,7 @@ class Program
 
 		lista.Mostrar();
 
+		//Exercicio 1
 		lista.Soma();
 	}
 }
